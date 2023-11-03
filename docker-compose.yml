@@ -10,6 +10,7 @@ services:
         image: tomcat:8-alpine
         ports:
             - '80:80'
+        restart: 'on-failure'
         volumes:
             - './app:/var/www/html'     
 
