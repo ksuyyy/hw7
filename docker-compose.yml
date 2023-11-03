@@ -12,6 +12,6 @@ services:
             - '80:80'
         restart: 'on-failure'
         volumes:
-            - './app:/var/www/html'     
+            - './app:/usr/local/tomcat/webapps'     
 
 ...
